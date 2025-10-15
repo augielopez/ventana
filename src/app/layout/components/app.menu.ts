@@ -17,6 +17,11 @@ import { Subscription } from 'rxjs';
                 <li *ngIf="item.separator" class="menu-separator"></li>
             </ng-container>
         </ul>
+        <div class="mt-auto pt-4 pb-4 px-4 border-t border-surface-200 dark:border-surface-700">
+            <div class="text-xs text-center text-surface-500 dark:text-surface-400 font-mono">
+                release/3.0.3
+            </div>
+        </div>
     </div>`
 })
 export class AppMenu implements OnInit, OnDestroy {
