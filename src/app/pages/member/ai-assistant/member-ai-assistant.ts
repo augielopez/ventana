@@ -79,17 +79,17 @@ import { MemberContextService } from '@/services/member-context.service';
             <div class="mb-4 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
                 <div class="h-[600px] overflow-y-auto p-4 bg-surface-50 dark:bg-surface-800" #chatContainer>
                     <!-- Welcome Message -->
-                    <div *ngIf="messages.length === 0" class="text-center py-12">
-                        <i class="pi pi-comments text-6xl text-primary mb-4"></i>
-                        <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0 mb-2">
+                    <div *ngIf="messages.length === 0" class="text-center py-6">
+                        <i class="pi pi-comments text-4xl text-primary mb-3"></i>
+                        <h3 class="text-lg font-semibold text-surface-900 dark:text-surface-0 mb-2">
                             Welcome to AI Assistant
                         </h3>
-                        <p class="text-surface-600 dark:text-surface-400 mb-4">
+                        <p class="text-surface-600 dark:text-surface-400 mb-3 text-sm">
                             I can help you understand {{ memberName }}'s eligibility and enrollment status
                         </p>
-                        <div class="text-left max-w-md mx-auto text-sm text-surface-600 dark:text-surface-400">
-                            <p class="font-semibold mb-2">Try asking:</p>
-                            <ul class="space-y-1">
+                        <div class="text-left max-w-md mx-auto text-xs text-surface-600 dark:text-surface-400">
+                            <p class="font-semibold mb-1">Try asking:</p>
+                            <ul class="space-y-0.5">
                                 <li>• Why wasn't this member enrolled in Diabetes Care?</li>
                                 <li>• What programs is this member eligible for?</li>
                                 <li>• What are their current diagnoses?</li>
