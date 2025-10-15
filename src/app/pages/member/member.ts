@@ -124,14 +124,8 @@ interface MemberDetails {
             <!-- Drugs Side Panel -->
             <div *ngIf="drugsDrawerVisible" class="col-span-12 lg:col-span-3">
                 <div class="card h-full">
-                    <div class="flex justify-between items-center mb-4">
+                    <div class="mb-4">
                         <h2 class="text-xl font-bold text-surface-900 dark:text-surface-0">Drugs (past six months only)</h2>
-                        <button 
-                            pButton 
-                            icon="pi pi-times" 
-                            class="p-button-rounded p-button-text"
-                            (click)="closeDrugsDrawer()"
-                        ></button>
                     </div>
                     <div class="space-y-4">
                         <div class="text-center py-12">
@@ -189,10 +183,6 @@ export class Member implements OnInit {
 
     toggleDrugsDrawer(): void {
         this.drugsDrawerVisible = !this.drugsDrawerVisible;
-    }
-
-    closeDrugsDrawer(): void {
-        this.drugsDrawerVisible = false;
     }
 
     getPlanStatusSeverity(status: string): string {
