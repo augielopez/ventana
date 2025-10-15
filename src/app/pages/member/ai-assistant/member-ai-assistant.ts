@@ -21,7 +21,7 @@ import { MemberContextService } from '@/services/member-context.service';
         ScrollPanelModule
     ],
     template: `
-        <div class="card h-full flex flex-col">
+        <div class="card flex flex-col">
             <!-- Header -->
             <div class="mb-4">
                 <div class="flex justify-between items-start mb-2">
@@ -76,8 +76,8 @@ import { MemberContextService } from '@/services/member-context.service';
             </div>
 
             <!-- Chat Messages -->
-            <div class="flex-1 mb-4 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-                <div class="h-[500px] overflow-y-auto p-4 bg-surface-50 dark:bg-surface-800" #chatContainer>
+            <div class="mb-4 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+                <div class="h-[600px] overflow-y-auto p-4 bg-surface-50 dark:bg-surface-800" #chatContainer>
                     <!-- Welcome Message -->
                     <div *ngIf="messages.length === 0" class="text-center py-12">
                         <i class="pi pi-comments text-6xl text-primary mb-4"></i>
@@ -191,7 +191,7 @@ import { MemberContextService } from '@/services/member-context.service';
     styles: [`
         :host ::ng-deep {
             .p-scrollpanel {
-                height: 500px;
+                height: 600px;
             }
         }
     `]
