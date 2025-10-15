@@ -314,6 +314,11 @@ export class LayoutService {
                     label: 'Alternate Id',
                     icon: 'pi pi-id-card',
                     routerLink: ['/pages/member', memberId, 'alternate-id']
+                },
+                {
+                    label: 'AI Assistant',
+                    icon: 'pi pi-sparkles',
+                    routerLink: ['/pages/member', memberId, 'ai-assistant']
                 }
             ]
         };

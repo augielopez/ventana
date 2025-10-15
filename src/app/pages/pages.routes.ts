@@ -15,6 +15,7 @@ import { MemberDiagnosis } from './member/diagnosis/member-diagnosis';
 import { MemberEligibility } from './member/eligibility/member-eligibility';
 import { MemberProcedure } from './member/procedure/member-procedure';
 import { MemberAlternateId } from './member/alternate-id/member-alternate-id';
+import { MemberAiAssistant } from './member/ai-assistant/member-ai-assistant';
 import { MemberPrograms } from './member/programs/member-programs';
 import { Reports } from './reports/reports';
 import { ReportDetail } from './reports/report-detail';
@@ -44,7 +45,8 @@ export default [
             { path: 'diagnosis', data: { breadcrumb: 'Diagnosis' }, component: MemberDiagnosis },
             { path: 'eligibility', data: { breadcrumb: 'Eligibility' }, component: MemberEligibility },
             { path: 'procedure', data: { breadcrumb: 'Procedure' }, component: MemberProcedure },
-            { path: 'alternate-id', data: { breadcrumb: 'Alternate ID' }, component: MemberAlternateId }
+            { path: 'alternate-id', data: { breadcrumb: 'Alternate ID' }, component: MemberAlternateId },
+            { path: 'ai-assistant', data: { breadcrumb: 'AI Assistant' }, component: MemberAiAssistant }
         ]
     },
     { path: '**', redirectTo: '/notfound' }
