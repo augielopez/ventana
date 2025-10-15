@@ -18,7 +18,7 @@ import { Subscription } from 'rxjs';
             </ng-container>
         </ul>
         <div class="flex-shrink-0 pt-4 pb-4 px-4 border-t border-surface-200 dark:border-surface-700">
-            <div class="text-xs text-center text-surface-500 dark:text-surface-400 font-mono">
+            <div class="text-xs text-center text-primary font-mono">
                 release/3.0.3
             </div>
         </div>
