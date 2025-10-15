@@ -7,7 +7,7 @@
     left: 0;
     top: 5rem;
     user-select: none;
-    background: var(--v-body-bg);
+    background: var(--primary-color);
     z-index: 999;
 
     .layout-menu-container {
@@ -28,7 +28,7 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 padding: 1rem 0 .5rem 0;
-                color: var(--v-menuitem-text-color-secondary);
+                color: rgba(255, 255, 255, 0.7);
 
                 .active-route {
                     font-weight: 700;
@@ -60,7 +60,7 @@
                 align-items: center;
                 outline: 0 none;
                 position: relative;
-                color: var(--v-menuitem-text-color);
+                color: rgba(255, 255, 255, 0.9);
                 padding: .5rem;
                 margin-bottom: .25rem;
                 border-radius: var(--border-radius);
@@ -80,10 +80,11 @@
 
                 &.active-route {
                     font-weight: 700;
+                    background: rgba(255, 255, 255, 0.2);
                 }
 
                 &:hover {
-                    background: var(--v-menuitem-hover-bg);
+                    background: rgba(255, 255, 255, 0.15);
                 }
             }
 

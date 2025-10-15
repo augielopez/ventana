@@ -17,8 +17,8 @@ import { Subscription } from 'rxjs';
                 <li *ngIf="item.separator" class="menu-separator"></li>
             </ng-container>
         </ul>
-        <div class="flex-shrink-0 pt-4 pb-4 px-4 border-t border-surface-200 dark:border-surface-700">
-            <div class="text-xs text-center text-primary font-mono">
+        <div class="flex-shrink-0 pt-4 pb-4 px-4 border-t border-white/20">
+            <div class="text-xs text-center text-white font-mono">
                 release/3.0.3
             </div>
         </div>
