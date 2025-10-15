@@ -7,7 +7,7 @@
     left: 0;
     top: 5rem;
     user-select: none;
-    background: linear-gradient(to top, var(--primary-color) 0%, var(--v-body-bg) 60%);
+    background: linear-gradient(to top, color-mix(in srgb, var(--primary-color) 40%, #000) 0%, var(--v-body-bg) 60%);
     z-index: 999;
 
     .layout-menu-container {
