@@ -10,14 +10,14 @@ import { Subscription } from 'rxjs';
     selector: '[app-menu]',
     standalone: true,
     imports: [CommonModule, AppMenuitem, RouterModule],
-    template: `<div class="layout-menu-container" #menuContainer>
-        <ul class="layout-menu">
+    template: `<div class="layout-menu-container flex flex-col h-full" #menuContainer>
+        <ul class="layout-menu flex-1 overflow-y-auto">
             <ng-container *ngFor="let item of model; let i = index">
                 <li app-menuitem *ngIf="!item.separator" [item]="item" [index]="i" [root]="true"></li>
                 <li *ngIf="item.separator" class="menu-separator"></li>
             </ng-container>
         </ul>
-        <div class="mt-auto pt-4 pb-4 px-4 border-t border-surface-200 dark:border-surface-700">
+        <div class="flex-shrink-0 pt-4 pb-4 px-4 border-t border-surface-200 dark:border-surface-700">
             <div class="text-xs text-center text-surface-500 dark:text-surface-400 font-mono">
                 release/3.0.3
             </div>
