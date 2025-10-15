@@ -317,7 +317,7 @@ export class AiAssistantService {
      * Get diagnosis name from ICD-10 code
      */
     private getDiagnosisName(code: string): string {
-        const dxMap: any = {
+        const dxMap: Record<string, string> = {
             'E11': '(Type 2 Diabetes Mellitus)',
             'I10': '(Essential Hypertension)',
             'I25': '(Coronary Artery Disease)',
