@@ -40,6 +40,11 @@ export class AppMenu implements OnInit, OnDestroy {
                     routerLink: ['/pages/search']
                 },
                 {
+                    label: 'My Queue',
+                    icon: 'pi pi-list',
+                    routerLink: ['/pages/my-queue']
+                },
+                {
                     label: 'Reports',
                     icon: 'pi pi-file-export',
                     routerLink: ['/pages/reports']

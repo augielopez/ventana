@@ -18,6 +18,7 @@ import { MemberAlternateId } from './member/alternate-id/member-alternate-id';
 import { MemberPrograms } from './member/programs/member-programs';
 import { Reports } from './reports/reports';
 import { ReportDetail } from './reports/report-detail';
+import { MyQueue } from './my-queue/my-queue';
 
 export default [
     { path: 'aboutus', data: { breadcrumb: 'About' }, component: AboutUs },
@@ -29,6 +30,7 @@ export default [
     { path: 'help', data: { breadcrumb: 'Help' }, component: Help },
     { path: 'invoice', data: { breadcrumb: 'Invoice' }, component: Invoice },
     { path: 'search', data: { breadcrumb: 'Search' }, component: Search },
+    { path: 'my-queue', data: { breadcrumb: 'My Queue' }, component: MyQueue },
     { path: 'reports', data: { breadcrumb: 'Reports' }, component: Reports },
     { path: 'reports/:id', data: { breadcrumb: 'Report Detail' }, component: ReportDetail },
     { 
